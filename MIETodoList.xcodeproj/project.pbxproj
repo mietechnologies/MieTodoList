@@ -44,6 +44,7 @@
 		74C8CC862AD20A5800CA0467 /* MIETodoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIETodoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C8CC8A2AD20A5800CA0467 /* MIETodoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIETodoListUITests.swift; sourceTree = "<group>"; };
 		74C8CC8C2AD20A5800CA0467 /* MIETodoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIETodoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		74C8CC992AD2260200CA0467 /* MIETodoList_Unit_Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MIETodoList_Unit_Tests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		74C8CC632AD20A5600CA0467 = {
 			isa = PBXGroup;
 			children = (
+				74C8CC992AD2260200CA0467 /* MIETodoList_Unit_Tests.xctestplan */,
 				74C8CC6E2AD20A5600CA0467 /* MIETodoList */,
 				74C8CC7F2AD20A5800CA0467 /* MIETodoListTests */,
 				74C8CC892AD20A5800CA0467 /* MIETodoListUITests */,

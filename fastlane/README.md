@@ -31,6 +31,14 @@ Delete the passed in file
 
 This lane lints the project
 
+### ios unit_tests
+
+```sh
+[bundle exec] fastlane ios unit_tests
+```
+
+This lane runs all the unit tests for the project
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.

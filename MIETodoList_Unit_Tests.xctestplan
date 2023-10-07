@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "C83E940D-99BB-4857-908D-8CFFFD6B752D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MIETodoList.xcodeproj",
+      "identifier" : "74C8CC6B2AD20A5600CA0467",
+      "name" : "MIETodoList"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MIETodoList.xcodeproj",
+        "identifier" : "74C8CC7B2AD20A5800CA0467",
+        "name" : "MIETodoListTests"
+      }
+    }
+  ],
+  "version" : 1
+}
