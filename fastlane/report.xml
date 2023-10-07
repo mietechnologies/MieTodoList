@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000186">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: Switch to ios delete lane" time="0.000294">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: delete_files" time="0.000185">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: swiftlint" time="2.770411">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
