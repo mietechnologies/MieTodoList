@@ -35,9 +35,20 @@ platform :ios do
   desc "This lane runs all the unit tests for the project"
   lane :unit_tests do |options|
     run_tests(
-      scheme: "MIETodoList_Unit_Tests",
+      scheme: "MIETodoListTests",
       clean: true,
+      suppress_xcode_output: true,
       skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution],
+      number_of_retries: 0
+    )
+  end
+
+  desc "This lane runs all the UI tests for the project"
+  lane :ui_tests do |options|
+    run_tests(
+      scheme: "MIETodoListUITests",
+      clean: true,
+      suppress_xcode_output: true,
       number_of_retries: 0
     )
   end

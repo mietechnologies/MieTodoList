@@ -39,6 +39,14 @@ This lane lints the project
 
 This lane runs all the unit tests for the project
 
+### ios ui_tests
+
+```sh
+[bundle exec] fastlane ios ui_tests
+```
+
+This lane runs all the UI tests for the project
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
