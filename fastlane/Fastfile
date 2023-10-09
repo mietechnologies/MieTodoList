@@ -1,0 +1,55 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Delete the passed in file"
+  lane :delete do |options|
+    delete_files(file_pattern: options[:file])
+  end
+
+  desc "This lane lints the project"
+  lane :lint do
+    delete(file: "swiftlint.results.json")
+    swiftlint(mode: :lint, 
+              config_file: "fastlane/.swiftlint-ci.yml",
+              output_file: "swiftlint.results.json",
+              reporter: "json",
+              raise_if_swiftlint_error: true,
+              ignore_exit_status: true)
+  end
+
+  desc "This lane runs all the unit tests for the project"
+  lane :unit_tests do |options|
+    run_tests(
+      scheme: "MIETodoListTests",
+      clean: true,
+      suppress_xcode_output: true,
+      skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution],
+      number_of_retries: 0
+    )
+  end
+
+  desc "This lane runs all the UI tests for the project"
+  lane :ui_tests do |options|
+    run_tests(
+      scheme: "MIETodoListUITests",
+      clean: true,
+      suppress_xcode_output: true,
+      number_of_retries: 0
+    )
+  end
+end
