@@ -23,6 +23,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- TodoTask Object and related tests [Task Object](https://app.asana.com/0/1205598945320382/1205626543665925/f)
+
 ### Changed
 
 ### Deprecated
