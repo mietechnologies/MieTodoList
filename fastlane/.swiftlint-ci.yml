@@ -31,3 +31,5 @@ identifier_name:
     - URL
     - GlobalAPIKey
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, codeclimate, junit, html, emoji, sonarqube, markdown, github-actions-logging)
+disabled_rules:
+  - trailing_whitespace

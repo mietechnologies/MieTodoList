@@ -11,7 +11,7 @@ import SwiftUI
 @testable import MIETodoList
 
 final class TodoTaskModelTests: XCTestCase {
-    
+
     private var context: ModelContext!
 
     override func setUpWithError() throws {
@@ -36,7 +36,7 @@ final class TodoTaskModelTests: XCTestCase {
         XCTAssertEqual(tasks.count, 1)
         XCTAssertFalse(newTask.isComplete)
     }
-    
+
     func testAddTodoTaskSubtasks() throws {
         let parentTask = TodoTask(name: "Finish Tests",
                                   priority: .high,
@@ -60,7 +60,7 @@ final class TodoTaskModelTests: XCTestCase {
         XCTAssertEqual(tasks.count, 3)
         XCTAssertTrue(parentTask.hasUnfinishedSubtasks)
     }
-    
+
     func testAddTodoTaskSubtasksArray() throws {
         let parentTask = TodoTask(name: "Finish Tests",
                                   priority: .high,
@@ -84,7 +84,7 @@ final class TodoTaskModelTests: XCTestCase {
         XCTAssertEqual(parentTask.subtasks.count, 2)
         XCTAssertTrue(parentTask.hasUnfinishedSubtasks)
     }
-    
+
     func testCompletedSubtasks() throws {
         let parentTask = TodoTask(name: "Finish Tests",
                                   priority: .high,
@@ -102,10 +102,10 @@ final class TodoTaskModelTests: XCTestCase {
         parentTask.add(firstSubtask)
         parentTask.add(secondSubtask)
         context.insert(parentTask)
-        
+
         firstSubtask.complete()
         secondSubtask.complete()
-        
+
         XCTAssertFalse(parentTask.hasUnfinishedSubtasks)
     }
 
