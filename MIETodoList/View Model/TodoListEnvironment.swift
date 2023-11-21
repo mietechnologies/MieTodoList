@@ -29,11 +29,17 @@ class TodoListEnvironment {
     }
     
     // MARK: These functions handle the CRUD operations of SwiftData
+    /**
+     Adds a given TodoTask to the SwiftData context, and proceed to save the context if it can.
+     */
     public func add(task: TodoTask) throws {
         context.insert(task)
         try context.save()
     }
     
+    /**
+     Adds an array of TodoTask objects to a parent TodoTask and to the SwiftData context, it will then save the context.
+     */
     public func add(subtasks: [TodoTask], to parentTask: TodoTask) throws {
         subtasks.forEach { task in
             context.insert(task)
@@ -42,6 +48,9 @@ class TodoListEnvironment {
         try context.save()
     }
     
+    /**
+     Deletes a given TodoTask from the SwiftData context, it will try to save the context once deleted.
+     */
     public func delete(task: TodoTask) throws {
         context.delete(task)
         try context.save()
