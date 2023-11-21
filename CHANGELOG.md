@@ -24,6 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - TodoTask Object and related tests [Task Object](https://app.asana.com/0/1205598945320382/1205626543665925/f)
+- App Icon [Create App Icon](https://app.asana.com/0/1205598945320382/1205876431016851/f)
+- Environment Object Skeleton [Environment Model](https://app.asana.com/0/1205598945320382/1205704891198658/f)
 
 ### Changed
 
